@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" disable="false" gridLinesVisible="true" hgap="10.0" prefHeight="1000.0" prefWidth="1500.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerSignUp">
+    <children>
+        <AnchorPane cache="true" disable="false" focusTraversable="false" prefHeight="722.0" prefWidth="897.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <children>
+                <Label alignment="TOP_CENTER" disable="false" focusTraversable="false" layoutX="542.0" layoutY="292.0" prefWidth="187.0" text="Enter Password" textAlignment="CENTER" textOverrun="ELLIPSIS" underline="false" visible="true" wrapText="false">
+                    <font>
+                        <Font name="System Bold" size="25.0" fx:id="x1" />
+                    </font>
+                    <textFill>
+                        <Color blue="1.000" green="0.328" red="0.200" fx:id="x2" />
+                    </textFill>
+                </Label>
+                <Label font="$x1" layoutY="195.0" text="Enter Login" AnchorPane.leftAnchor="568.0">
+                    <textFill>
+                        <Color blue="1.000" green="0.329" red="0.200" fx:id="x3" />
+                    </textFill>
+                </Label>
+                <TextField fx:id="tfLogin" layoutX="510.0" layoutY="249.0" prefHeight="35.0" prefWidth="250.0" />
+                <PasswordField fx:id="pfPassword" layoutX="510.0" layoutY="336.0" prefHeight="35.0" prefWidth="250.0" />
+
+                <Button fx:id="btnSignUp" cancelButton="false" defaultButton="true" layoutX="575.0" layoutY="404.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="121.0" text="Sign Up" textAlignment="LEFT" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label layoutX="1061.0" layoutY="25.0" prefWidth="152.0" text="Еще не зарегистрированы?" />
+                <Hyperlink fx:id="linkRegistr" layoutX="1213.0" layoutY="22.0" text="Зарегистрироваться!" textFill="#3354ff" underline="true">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Hyperlink>
+            <Label fx:id="errSignUp" layoutX="788.0" layoutY="295.0" prefHeight="36.0" prefWidth="490.0" text="" textFill="#f80000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+</GridPane>

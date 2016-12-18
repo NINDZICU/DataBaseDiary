@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" disable="false" gridLinesVisible="true" hgap="10.0" prefHeight="1000.0" prefWidth="1500.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerMain">
+    <children>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="985.0" prefWidth="1500.0">
+                    <children>
+                        <TableView fx:id="tableNotes" cache="true" disable="false" editable="true" focusTraversable="true" layoutX="25.0" layoutY="54.0" mouseTransparent="false" pickOnBounds="false" prefHeight="604.0" prefWidth="1300.0" tableMenuButtonVisible="false">
+                            <columns>
+                                <TableColumn fx:id="columnNote" maxWidth="5000.0" minWidth="10.0" prefWidth="784.0" sortable="false" text="Заметки" />
+                                <TableColumn fx:id="columnForTime" maxWidth="5000.0" minWidth="10.0" prefWidth="99.0" sortable="true" text="C" />
+                                <TableColumn fx:id="columnToTime" maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" sortable="true" text="До" />
+                                <TableColumn fx:id="placeColumn" maxWidth="5000.0" minWidth="10.0" prefWidth="130.0" sortable="true" text="Место" />
+                                <TableColumn fx:id="friendColumn" maxWidth="5000.0" minWidth="10.0" prefWidth="178.0" sortable="true" text="Друзья" />
+                            </columns>
+                        </TableView>
+                        <AnchorPane layoutX="-1.0" layoutY="0.0" prefHeight="41.0" prefWidth="1500.0">
+                            <children>
+                                <Button fx:id="next" layoutX="710.0" layoutY="7.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" text="Вперед" />
+                                <Button fx:id="previous" layoutX="408.0" layoutY="7.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" text="Назад" />
+                                <Button fx:id="addNote" cache="false" cancelButton="false" defaultButton="true" layoutX="847.0" layoutY="6.0" mnemonicParsing="false" mouseTransparent="false" pickOnBounds="false" text="+" textAlignment="LEFT" textOverrun="ELLIPSIS" wrapText="false">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <DatePicker fx:id="datePicker" layoutX="524.0" layoutY="12.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+</GridPane>

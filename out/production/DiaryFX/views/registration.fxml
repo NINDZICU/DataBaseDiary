@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" disable="false" gridLinesVisible="true" hgap="10.0" prefHeight="1000.0" prefWidth="1500.0"
+          vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="controllers.ControllerRegistration">
+    <children>
+        <AnchorPane cache="true" disable="false" focusTraversable="false" prefHeight="722.0" prefWidth="897.0"
+                    GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <children>
+                <Label layoutY="87.0" text="Registration" AnchorPane.leftAnchor="485.0">
+                    <font>
+                        <Font name="System Bold" size="70.0"/>
+                    </font>
+                    <textFill>
+                        <Color blue="1.000" green="0.329" red="0.200" fx:id="x1"/>
+                    </textFill>
+                </Label>
+                <TextField fx:id="tfName" cache="true" layoutX="542.0" layoutY="220.0" prefHeight="35.0"
+                           prefWidth="288.0" promptText="" visible="true"/>
+                <TextField fx:id="tfLogin" disable="false" layoutX="542.0" layoutY="285.0" prefHeight="35.0"
+                           prefWidth="288.0" promptText=""/>
+                <PasswordField fx:id="tfPassword" layoutX="542.0" layoutY="349.0" prefHeight="35.0" prefWidth="288.0"
+                               promptText=""/>
+                <PasswordField fx:id="tfConfirm" layoutX="542.0" layoutY="414.0" prefHeight="35.0" prefWidth="288.0"
+                               promptText=""/>
+                <Button fx:id="btnRegistr" cancelButton="false" defaultButton="true" layoutX="586.0" layoutY="500.0"
+                        mnemonicParsing="false" prefHeight="45.0" prefWidth="141.0" text="End" textAlignment="LEFT"
+                        textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="542.0" layoutY="202.0" prefWidth="114.0" text="Enter your name:" textFill="$x1">
+                    <font>
+                        <Font size="14.0" fx:id="x2"/>
+                    </font>
+                </Label>
+                <Label font="$x2" layoutX="542.0" layoutY="266.0" prefWidth="114.0" text="Enter your Login:"
+                       textFill="$x1"/>
+                <Label font="$x2" layoutX="542.0" layoutY="330.0" prefWidth="114.0" text="Enter Password:"
+                       textFill="$x1"/>
+                <Label font="$x2" layoutX="542.0" layoutY="395.0" prefWidth="122.0" text="Confirm Password:"
+                       textFill="$x1"/>
+                <Label fx:id="errName" layoutX="831.0" layoutY="228.0" prefHeight="20.0" prefWidth="400.0" text=""
+                       textFill="RED">
+                    <font>
+                        <Font name="System Bold" size="14.0" fx:id="x3"/>
+                    </font>
+                </Label>
+                <Label fx:id="errLogin" font="$x3" layoutX="831.0" layoutY="293.0" prefHeight="20.0" prefWidth="645.0"
+                       text="" textFill="RED"/>
+                <Label fx:id="errPassword" font="$x3" layoutX="831.0" layoutY="357.0" prefWidth="400.0" text=""
+                       textFill="RED"/>
+                <Label fx:id="errConfirm" font="$x3" layoutX="831.0" layoutY="422.0" prefWidth="400.0" text=""
+                       textFill="RED"/>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+</GridPane>
