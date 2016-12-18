@@ -13,6 +13,10 @@ import java.util.List;
 /**
  * Created by Admin on 17.12.2016.
  */
+
+/**
+ * тут должно было быть все реализовано с помощью рефлексии, но теперь он не используется
+ */
 public class ORM {
 
     Field[] fields;

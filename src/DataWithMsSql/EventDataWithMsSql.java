@@ -41,7 +41,7 @@ public class EventDataWithMsSql extends AbstractDao<Event, Integer> {
 
     @Override
     public String getUpdateQuery() {
-        return "UPDATE diary_database.Events SET event_name=?, event_date=?, event_begin_time=?, event_end_time=? WHERE event_id= ?;";
+        return "UPDATE Events SET event_name=?, event_date=?, event_begin_time=?, event_end_time=? WHERE event_id= ?;";
 //        return "UPDATE Events SET reminder_id= ? place_id = ? users_id=?" +
 //                "event_name=? event_date=? event_begin_time=? event_end_time=? WHERE event_id= ?;";
     }
