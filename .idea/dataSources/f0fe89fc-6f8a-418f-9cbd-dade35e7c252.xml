@@ -33,7 +33,7 @@
     </database>
     <schema id="11" parent="2" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2016-12-19.11:16:12.020</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2016-12-19.23:18:55.677</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -74,34 +74,34 @@
       <ObjectId>16393</ObjectId>
     </schema>
     <table id="24" parent="11" name="Events">
-      <ObjectId>558625033</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.140</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.610</ModifiedTimestamp>
+      <ObjectId>1662628966</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.847</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.920</ModifiedTimestamp>
     </table>
     <table id="25" parent="11" name="Friends">
-      <ObjectId>526624919</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.020</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.420</ModifiedTimestamp>
+      <ObjectId>1214627370</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:51.033</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.943</ModifiedTimestamp>
     </table>
     <table id="26" parent="11" name="Places">
-      <ObjectId>462624691</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.543</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+      <ObjectId>1630628852</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:10.727</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.883</ModifiedTimestamp>
     </table>
     <table id="27" parent="11" name="Reminders">
-      <ObjectId>494624805</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.707</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+      <ObjectId>1182627256</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:51.007</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.883</ModifiedTimestamp>
     </table>
     <table id="28" parent="11" name="Users">
-      <ObjectId>398624463</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.357</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+      <ObjectId>1086626914</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:50.803</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.883</ModifiedTimestamp>
     </table>
     <table id="29" parent="11" name="friends_group">
-      <ObjectId>638625318</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.200</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.200</ModifiedTimestamp>
+      <ObjectId>1742629251</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.900</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.900</ModifiedTimestamp>
     </table>
     <table id="30" parent="11" name="sysdiagrams">
       <ObjectId>901578250</ObjectId>
@@ -109,9 +109,9 @@
       <ModifiedTimestamp>2016-12-04.22:16:26.493</ModifiedTimestamp>
     </table>
     <view id="31" parent="11" name="select_all">
-      <ObjectId>750625717</ObjectId>
-      <CreatedTimestamp>2016-12-19.11:16:09.830</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-19.11:16:09.830</ModifiedTimestamp>
+      <ObjectId>1406628054</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:51.280</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:51.280</ModifiedTimestamp>
     </view>
     <routine id="32" parent="11" name="fn_diagramobjects">
       <ObjectId>1045578763</ObjectId>
@@ -121,151 +121,151 @@
       <RoutineType>scalar-fun</RoutineType>
     </routine>
     <routine id="33" parent="11" name="getLastId">
-      <ObjectId>702625546</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.770</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.770</ModifiedTimestamp>
+      <ObjectId>1390627997</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:51.243</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:51.243</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="34" parent="11" name="get_notes_today">
-      <ObjectId>734625660</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.890</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.890</ModifiedTimestamp>
+    <routine id="34" parent="11" name="get_friends">
+      <ObjectId>1454628225</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:10:59.590</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:10:59.590</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="35" parent="11" name="sp_alterdiagram">
+    <routine id="35" parent="11" name="get_notes_today">
+      <ObjectId>1790629422</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:54.870</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:54.870</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="36" parent="11" name="sp_alterdiagram">
       <ObjectId>1013578649</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.750</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.750</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="36" parent="11" name="sp_creatediagram">
+    <routine id="37" parent="11" name="sp_creatediagram">
       <ObjectId>981578535</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.743</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.743</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="37" parent="11" name="sp_dropdiagram">
+    <routine id="38" parent="11" name="sp_dropdiagram">
       <ObjectId>1029578706</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.767</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.767</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="38" parent="11" name="sp_helpdiagramdefinition">
+    <routine id="39" parent="11" name="sp_helpdiagramdefinition">
       <ObjectId>965578478</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.703</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.703</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="39" parent="11" name="sp_helpdiagrams">
+    <routine id="40" parent="11" name="sp_helpdiagrams">
       <ObjectId>949578421</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.603</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.603</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="40" parent="11" name="sp_renamediagram">
+    <routine id="41" parent="11" name="sp_renamediagram">
       <ObjectId>997578592</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.747</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.747</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <routine id="41" parent="11" name="sp_upgraddiagrams">
+    <routine id="42" parent="11" name="sp_upgraddiagrams">
       <ObjectId>885578193</ObjectId>
       <CreatedTimestamp>2016-12-04.22:16:26.390</CreatedTimestamp>
       <ModifiedTimestamp>2016-12-04.22:16:26.390</ModifiedTimestamp>
       <RoutineKind>procedure</RoutineKind>
       <RoutineType>proc</RoutineType>
     </routine>
-    <column id="42" parent="24" name="event_id">
+    <column id="43" parent="24" name="event_id">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="43" parent="24" name="reminder_id">
+    <column id="44" parent="24" name="reminder_id">
       <Position>2</Position>
       <DataType>int|0</DataType>
     </column>
-    <column id="44" parent="24" name="place_id">
+    <column id="45" parent="24" name="place_id">
       <Position>3</Position>
       <DataType>int|0</DataType>
     </column>
-    <column id="45" parent="24" name="users_id">
+    <column id="46" parent="24" name="users_id">
       <Position>4</Position>
       <DataType>int|0</DataType>
     </column>
-    <column id="46" parent="24" name="event_name">
+    <column id="47" parent="24" name="event_name">
       <Position>5</Position>
-      <DataType>text|0</DataType>
+      <DataType>nvarchar(255)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="24" name="event_date">
+    <column id="48" parent="24" name="event_date">
       <Position>6</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="24" name="event_begin_time">
+    <column id="49" parent="24" name="event_begin_time">
       <Position>7</Position>
       <DataType>time|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="49" parent="24" name="event_end_time">
+    <column id="50" parent="24" name="event_end_time">
       <Position>8</Position>
       <DataType>time|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="50" parent="24" name="PK_events_event_id">
+    <index id="51" parent="24" name="PK_events_event_id">
       <Position>1</Position>
       <ColNames>event_id</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="51" parent="24" name="PK_events_event_id">
-      <ObjectId>574625090</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.140</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+    <key id="52" parent="24" name="PK_events_event_id">
+      <ObjectId>1678629023</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.857</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.857</ModifiedTimestamp>
       <ColNames>event_id</ColNames>
       <UnderlyingIndexName>PK_events_event_id</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="52" parent="24" name="FK_eventslist_reminder_id">
-      <ObjectId>590625147</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.140</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+    <foreign-key id="53" parent="24" name="FK_eventslist_reminder_id">
+      <ObjectId>1694629080</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.873</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.873</ModifiedTimestamp>
       <ColNames>reminder_id</ColNames>
       <RefTableName>Reminders</RefTableName>
       <RefColNames>reminder_id</RefColNames>
     </foreign-key>
-    <foreign-key id="53" parent="24" name="FK_place_id">
-      <ObjectId>606625204</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.140</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+    <foreign-key id="54" parent="24" name="FK_place_id">
+      <ObjectId>1710629137</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.883</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.883</ModifiedTimestamp>
       <ColNames>place_id</ColNames>
       <RefTableName>Places</RefTableName>
       <RefColNames>place_id</RefColNames>
     </foreign-key>
-    <foreign-key id="54" parent="24" name="FK_users_id">
-      <ObjectId>622625261</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.140</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.140</ModifiedTimestamp>
+    <foreign-key id="55" parent="24" name="FK_users_id">
+      <ObjectId>1726629194</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.883</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.883</ModifiedTimestamp>
       <ColNames>users_id</ColNames>
       <RefTableName>Users</RefTableName>
       <RefColNames>users_id</RefColNames>
     </foreign-key>
-    <trigger id="55" parent="24" name="drop_tables">
-      <ObjectId>686625489</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.610</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.610</ModifiedTimestamp>
-      <Events>D</Events>
-      <Turn>instead-of</Turn>
-    </trigger>
     <column id="56" parent="25" name="friend_id">
       <Position>1</Position>
       <DataType>int|0</DataType>
@@ -284,9 +284,9 @@
       <Unique>1</Unique>
     </index>
     <key id="59" parent="25" name="PK_friend_friend_id">
-      <ObjectId>542624976</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.023</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.023</ModifiedTimestamp>
+      <ObjectId>1230627427</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:51.080</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:51.080</ModifiedTimestamp>
       <ColNames>friend_id</ColNames>
       <UnderlyingIndexName>PK_friend_friend_id</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -304,7 +304,7 @@
     </column>
     <column id="62" parent="26" name="description">
       <Position>3</Position>
-      <DataType>text|0</DataType>
+      <DataType>nvarchar(1000)|0</DataType>
     </column>
     <index id="63" parent="26" name="PK_place_id">
       <Position>1</Position>
@@ -313,9 +313,9 @@
       <Unique>1</Unique>
     </index>
     <key id="64" parent="26" name="PK_place_id">
-      <ObjectId>478624748</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.687</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:49.687</ModifiedTimestamp>
+      <ObjectId>1646628909</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:10.777</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:10.777</ModifiedTimestamp>
       <ColNames>place_id</ColNames>
       <UnderlyingIndexName>PK_place_id</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -343,9 +343,9 @@
       <Unique>1</Unique>
     </index>
     <key id="69" parent="27" name="PK_reminder_id">
-      <ObjectId>510624862</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.813</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:49.813</ModifiedTimestamp>
+      <ObjectId>1198627313</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:51.007</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:51.007</ModifiedTimestamp>
       <ColNames>reminder_id</ColNames>
       <UnderlyingIndexName>PK_reminder_id</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -378,24 +378,24 @@
       <Unique>1</Unique>
     </index>
     <key id="75" parent="28" name="PK_users_user_id">
-      <ObjectId>414624520</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.480</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:49.480</ModifiedTimestamp>
+      <ObjectId>1102626971</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:50.920</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:50.920</ModifiedTimestamp>
       <ColNames>users_id</ColNames>
       <UnderlyingIndexName>PK_users_user_id</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <check id="76" parent="28" name="CH_users_login">
-      <ObjectId>430624577</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.500</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:49.500</ModifiedTimestamp>
+      <ObjectId>1118627028</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:50.920</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:50.920</ModifiedTimestamp>
       <ColNames>user_login</ColNames>
       <Predicate>len([user_login])&gt;4</Predicate>
     </check>
     <check id="77" parent="28" name="CH_users_password">
-      <ObjectId>446624634</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:49.500</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:49.500</ModifiedTimestamp>
+      <ObjectId>1134627085</ObjectId>
+      <CreatedTimestamp>2016-12-19.13:16:50.937</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.13:16:50.937</ModifiedTimestamp>
       <ColNames>user_password</ColNames>
       <Predicate>len([user_password])&gt;=6</Predicate>
     </check>
@@ -408,17 +408,17 @@
       <DataType>int|0</DataType>
     </column>
     <foreign-key id="80" parent="29" name="FK_friends_group_id">
-      <ObjectId>654625375</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.240</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.240</ModifiedTimestamp>
+      <ObjectId>1758629308</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.920</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.920</ModifiedTimestamp>
       <ColNames>event_id</ColNames>
       <RefTableName>Events</RefTableName>
       <RefColNames>event_id</RefColNames>
     </foreign-key>
     <foreign-key id="81" parent="29" name="FK_friends_group_friend_id">
-      <ObjectId>670625432</ObjectId>
-      <CreatedTimestamp>2016-12-18.23:57:50.280</CreatedTimestamp>
-      <ModifiedTimestamp>2016-12-18.23:57:50.280</ModifiedTimestamp>
+      <ObjectId>1774629365</ObjectId>
+      <CreatedTimestamp>2016-12-19.23:18:23.940</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-19.23:18:23.940</ModifiedTimestamp>
       <ColNames>friend_id</ColNames>
       <RefTableName>Friends</RefTableName>
       <RefColNames>friend_id</RefColNames>
@@ -531,35 +531,35 @@ name</ColNames>
     <argument id="103" parent="34" name="@date">
       <DataType>date|0</DataType>
     </argument>
-    <argument id="104" parent="35" name="@diagramname">
+    <argument id="104" parent="35" name="@UserId">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="105" parent="35" name="@date">
+      <DataType>date|0</DataType>
+    </argument>
+    <argument id="106" parent="36" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="105" parent="35" name="@owner_id">
+    <argument id="107" parent="36" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="106" parent="35" name="@version">
+    <argument id="108" parent="36" name="@version">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="107" parent="35" name="@definition">
+    <argument id="109" parent="36" name="@definition">
       <DataType>varbinary|0</DataType>
     </argument>
-    <argument id="108" parent="36" name="@diagramname">
+    <argument id="110" parent="37" name="@diagramname">
       <DataType>sysname|0</DataType>
     </argument>
-    <argument id="109" parent="36" name="@owner_id">
+    <argument id="111" parent="37" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="110" parent="36" name="@version">
+    <argument id="112" parent="37" name="@version">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="111" parent="36" name="@definition">
+    <argument id="113" parent="37" name="@definition">
       <DataType>varbinary|0</DataType>
-    </argument>
-    <argument id="112" parent="37" name="@diagramname">
-      <DataType>sysname|0</DataType>
-    </argument>
-    <argument id="113" parent="37" name="@owner_id">
-      <DataType>int|0</DataType>
     </argument>
     <argument id="114" parent="38" name="@diagramname">
       <DataType>sysname|0</DataType>
@@ -579,7 +579,13 @@ name</ColNames>
     <argument id="119" parent="40" name="@owner_id">
       <DataType>int|0</DataType>
     </argument>
-    <argument id="120" parent="40" name="@new_diagramname">
+    <argument id="120" parent="41" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="121" parent="41" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="122" parent="41" name="@new_diagramname">
       <DataType>sysname|0</DataType>
     </argument>
   </database-model>

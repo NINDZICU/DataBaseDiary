@@ -68,7 +68,7 @@ public abstract class AbstractDao<T extends Identified<PK>, PK extends Integer> 
     @Override
     public void update(T object) throws SQLException {
         String sql = getUpdateQuery();
-        try (PreparedStatement statement = connection.prepareStatement(sql);) {
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
             System.out.println(sql);
             prepareStatementForUpdate(statement, object);
             statement.executeUpdate();

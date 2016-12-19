@@ -32,7 +32,7 @@ public class FriendDataWithMsSql extends AbstractDao<Friend, Integer> {
 
     @Override
     public String getSelectQuery() {
-        return "EXECUTE get_notes_today @UserId="+Main.USERID+" , @date='"+date+"'";
+        return "EXECUTE get_friends @UserId="+Main.USERID+" , @date='"+date+"'";
     }
 
     @Override

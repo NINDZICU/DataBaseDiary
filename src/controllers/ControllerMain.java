@@ -70,7 +70,7 @@ public class ControllerMain {
         tableNotes.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                if (event.getButton()==MouseButton.PRIMARY) {
+                if (event.getButton() == MouseButton.PRIMARY) {
                     System.out.println(tableNotes.getSelectionModel().getSelectedCells());
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/editPage.fxml"));
                     try {
@@ -95,14 +95,15 @@ public class ControllerMain {
                      * на правой кнопке удаление из таблицы
                      */
                     children.setParent(ControllerMain.this);
-                } else if(event.getButton()== MouseButton.SECONDARY){
+                } else if (event.getButton() == MouseButton.SECONDARY) {
                     Event event1 = notes.get(tableNotes.getSelectionModel().getSelectedIndex());
                     try {
                         EventDataWithMsSql eventdata = new EventDataWithMsSql(DBWrapper.getConnection());
                         eventdata.delete(event1);
                         notes.clear();
                         eventData = new EventDataWithMsSql(DBWrapper.getConnection());
-                        List<Event>events = eventData.getAll();
+                        eventData.setDate(String.valueOf(datePicker.getValue()));
+                        List<Event> events = eventData.getAll();
                         for (int i = 0; i < events.size(); i++) {
                             notes.add(events.get(i));
                         }
@@ -111,7 +112,7 @@ public class ControllerMain {
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }
-
+                    tableNotes.setItems(notes);
                 }
             }
 
@@ -172,7 +173,7 @@ public class ControllerMain {
         List<Place> places = null;
         try {
 //            if (eventData == null) {
-                eventData = new EventDataWithMsSql(DBWrapper.getConnection());
+            eventData = new EventDataWithMsSql(DBWrapper.getConnection());
 //            }
             PlaceDataWithMsSql placeData = new PlaceDataWithMsSql(DBWrapper.getConnection());
             eventData.setDate(String.valueOf(datePicker.getValue()));

@@ -72,7 +72,9 @@ public class ControllerEdit {
 
     @FXML
     public void initialize() {
+        tfName.setText(" ");
         datePicker.setValue(LocalDate.now());
+        tfFriend.setText(" ");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 //        fromTimeSpinner.valueProperty().addListener((obs, oldTime, newTime) ->
 //                System.out.println(formatter.format(newTime)));
@@ -96,11 +98,9 @@ public class ControllerEdit {
 //                    for (int i = 0; i < events.size(); i++) {
 //                        LocalTime localTime = LocalTime.parse(events.get(i).getEvent_begin_time(), formatter1);
 //                        LocalTime localTime2 = LocalTime.parse(events.get(i).getEvent_end_time(), formatter1);
-//                        if (localTime.getHour() > toTimeSpinner.getValue().getHour() && localTime2.getHour() > toTimeSpinner.getValue().getHour()
+//                        if ((localTime.getHour() > toTimeSpinner.getValue().getHour() && localTime2.getHour() > toTimeSpinner.getValue().getHour()
 //                                 || (
-//                                localTime.getHour() < fromTimeSpinner.getValue().getHour() && localTime2.getHour() < fromTimeSpinner.getValue().getHour() &&
-//                                        localTime.getMinute() < fromTimeSpinner.getValue().getMinute() &&
-//                                        localTime2.getMinute() < fromTimeSpinner.getValue().getMinute())) {
+//                                localTime.getHour() < fromTimeSpinner.getValue().getHour() && localTime2.getHour() < fromTimeSpinner.getValue().getHour()))) {
 //                            check = true;
 //                        }else if((localTime.getHour() ==fromTimeSpinner.getValue().getHour()||localTime2.getHour()==fromTimeSpinner.getValue().getHour())&&(localTime.getMinute() < fromTimeSpinner.getValue().getMinute() &&
 //                                localTime2.getMinute() < fromTimeSpinner.getValue().getMinute())||(localTime.getMinute() > toTimeSpinner.getValue().getMinute() &&
@@ -274,8 +274,9 @@ public class ControllerEdit {
         textAreaDescription.setText(places.get(0).getDescription());
         tfName.setText(places.get(0).getPlace_name());
         for (int i = 0; i < friends.size(); i++) {
-            labFriend.setText(labFriend.getText()+friends.get(i).getFriend_name());
+            labFriend.setText(labFriend.getText()+friends.get(i).getFriend_name()+" ");
         }
+
 //        tfFriend.setText(friends.get(0).getFriend_name());
 
 
